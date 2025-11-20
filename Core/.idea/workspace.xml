@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Core:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1048222-1fe5-4b96-9a8d-54898f3e8c1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/launcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/EmailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ExchangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ExchangeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReturnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReturnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SalesInvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SalesInvoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/EmailNotificationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/EmailNotificationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/BankDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/BankDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesInvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesInvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesReturnRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesReturnRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BankDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BankDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/FileStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/InvoicePrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/InvoicePrintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ReturnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ReturnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SaleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-mysql-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application-mysql-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exports/gstr1_export_202509.csv" beforeDir="false" afterPath="$PROJECT_DIR$/exports/gstr1_export_202509.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/Admin1DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/Admin1DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmailLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmailLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ExchangeItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ExchangeItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/InvoicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/InvoicesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ReturnSaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ReturnSaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesAuditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesAuditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/EmailLogDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/EmailLogDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesInvoiceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesInvoiceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesListResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesListResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/EmailLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/EmailLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/InvoiceRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/InvoiceRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesRecordFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesRecordFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesSummaryReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesSummaryReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Admin1Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Admin1Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/BankDetailsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/BankDetailsView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ExchangeItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ExchangeItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Invoices.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Invoices.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/NewSale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/NewSale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ReturnSale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ReturnSale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesAuditView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesAuditView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesDetailView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesDetailView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/email_logs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/email_logs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrcodes/5e052ade-95f6-4622-bc27-e5a41a01a7c6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/054007c9-e3a5-4145-9afc-233e546cb8eb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/065b3a44-be1b-4612-bb1e-a9842fa10fc7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0b24670e-443f-4880-a8b8-8d59d430d978.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0f8d0655-6e7e-48af-b6cb-9140d69beffa.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/12d1df39-3ad5-4788-a29e-9b4bb363043d.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/16220bef-eea0-43b6-8246-ae263b6eac61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2a1603e7-7cb5-473f-a8c9-235a5811476f.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2b5c7016-3a67-40b0-be97-eed932ef205d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2e4160b3-74e5-46cd-a8dc-b8d1bc567eb9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/55bf4035-24aa-40cf-aa4e-57238b900a44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/59a2e7df-3563-46f4-ba37-06ecf4fc4539.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5e052ade-95f6-4622-bc27-e5a41a01a7c6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/65f4ec8c-ec3e-4310-8717-cd7e77feb7cd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/68c3d0b2-44db-4f31-a3e5-6f6799b4d65d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/6f43899e-bb2a-4f1e-ad6b-bcc3f68860a4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/75d848fe-727b-460c-9179-e950ea19799f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/80de5362-79e0-46ec-b8ed-ad9a8b47cbaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/89ec6475-f1e4-484e-8ed4-7aa86d176491.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/9e0a97e1-9a80-4298-8dc2-544525b500ff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/9e395d98-d6fb-4fb0-ab47-b71342a511e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/a8531de2-ed60-4831-ac58-1957195a99b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/b59ed6b9-ed96-4f0c-8048-b02688a39c3d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/b9f5d66b-fa97-41a6-b419-57d34d17031d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/c5b6bdfa-7db2-4ec7-84dd-a35448290358.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/d067ce5d-e01d-4e48-9a05-4efa4a6f4197.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/d4fe2767-48e9-4820-9596-526b7a4a3f95.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/da91996b-fd0b-435e-822d-bc372abf0087.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/da968725-3a37-461e-bfa0-cde53df86e54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/dc530ec3-fe77-41a5-b603-cac54d895e05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/e0c9dec0-a3bc-476f-8c99-9a295192e341.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/eb66d354-5b04-4e75-b925-5c6196b74cb5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ecf11251-b289-4d1c-8dc9-781c5ec822cb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/f4ac9087-1104-4be9-b002-d977a03c6915.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ff2cfa92-5eb4-4ba0-a99b-22fbde226f6d.jpeg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SaleController.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesInvoice.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesInvoiceRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesItemRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/InvoicePrintService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SaleService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/resources/application-mysql-prod.properties" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ReturnSaleController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesAuditController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesDetailController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3052jaPe8ooe6vkqiGtdIZolIzd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MySQLToSQLiteMigrator.executor": "Run",
+    "Application.NishgridClientErpBackendApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "sales-1.0",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/dev1/IdeaProjects/Core/frontend/src/main/java/org/nishgrid/clienterp",
+    "last_opened_file_path": "/home/dev1/license-provider",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/dev1/IdeaProjects/Core/launcher/src/main/java/org/nishgrid/clienterp/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/resources" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/resources/fxml" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/launcher/src/main/resources/config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.nishgrid.clienterp.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NishgridClientErpBackendApplication">
+    <configuration name="MySQLToSQLiteMigrator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.nishgrid.clienterp.MySQLToSQLiteMigrator" />
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nishgrid.clienterp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NishgridClientErpBackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.nishgrid.clienterp.NishgridClientErpBackendApplication" />
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nishgrid.clienterp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NishgridClientErpBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.nishgrid.clienterp.NishgridClientErpBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NishgridClientErpBackendApplication" />
+        <item itemvalue="Application.MySQLToSQLiteMigrator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1048222-1fe5-4b96-9a8d-54898f3e8c1b" name="Changes" comment="" />
+      <created>1752903248368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752903248368</updated>
+      <workItem from="1757184560782" duration="12000" />
+      <workItem from="1757184628818" duration="107000" />
+      <workItem from="1757185359588" duration="12154000" />
+      <workItem from="1757315397651" duration="1644000" />
+      <workItem from="1757319578374" duration="2870000" />
+      <workItem from="1757322886969" duration="33251000" />
+      <workItem from="1757501649447" duration="337000" />
+      <workItem from="1757566054996" duration="41481000" />
+      <workItem from="1757926494439" duration="10137000" />
+      <workItem from="1757936859452" duration="570000" />
+      <workItem from="1757994216275" duration="20186000" />
+      <workItem from="1758019536885" duration="1642000" />
+      <workItem from="1758021911286" duration="3598000" />
+      <workItem from="1758082587488" duration="4935000" />
+      <workItem from="1758087561653" duration="16979000" />
+      <workItem from="1758118751867" duration="15012000" />
+      <workItem from="1758180071124" duration="9272000" />
+      <workItem from="1758189729942" duration="5948000" />
+      <workItem from="1758196046661" duration="196000" />
+      <workItem from="1758198903679" duration="13957000" />
+      <workItem from="1758273253560" duration="7134000" />
+      <workItem from="1758341173527" duration="38775000" />
+      <workItem from="1758518598320" duration="19639000" />
+      <workItem from="1758773291541" duration="5444000" />
+      <workItem from="1758778896300" duration="32220000" />
+      <workItem from="1758866538115" duration="749000" />
+      <workItem from="1758867314981" duration="2939000" />
+      <workItem from="1758882474974" duration="1417000" />
+      <workItem from="1758884461344" duration="145000" />
+      <workItem from="1758884630258" duration="392000" />
+      <workItem from="1758885079356" duration="21042000" />
+      <workItem from="1759056046513" duration="9425000" />
+      <workItem from="1759124014656" duration="6576000" />
+      <workItem from="1759130652029" duration="6287000" />
+      <workItem from="1759141442590" duration="336000" />
+      <workItem from="1759201480942" duration="4406000" />
+      <workItem from="1759245456582" duration="4252000" />
+      <workItem from="1759722628146" duration="53000" />
+      <workItem from="1759722695178" duration="300000" />
+      <workItem from="1759723004876" duration="331000" />
+      <workItem from="1759723366731" duration="7025000" />
+      <workItem from="1759731041681" duration="4705000" />
+      <workItem from="1759739780536" duration="7203000" />
+      <workItem from="1759756479728" duration="228000" />
+      <workItem from="1759801928083" duration="7109000" />
+      <workItem from="1759819847899" duration="3287000" />
+      <workItem from="1759825518030" duration="16817000" />
+      <workItem from="1759985161607" duration="13160000" />
+      <workItem from="1760003360225" duration="21611000" />
+      <workItem from="1760419712994" duration="13428000" />
+      <workItem from="1760502193704" duration="16000" />
+      <workItem from="1760769232619" duration="13649000" />
+      <workItem from="1761193104534" duration="3740000" />
+      <workItem from="1761712762573" duration="229000" />
+      <workItem from="1762251332535" duration="207000" />
+      <workItem from="1762251633521" duration="38000" />
+      <workItem from="1762316758209" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.db" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

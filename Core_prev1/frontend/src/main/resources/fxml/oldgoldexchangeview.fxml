@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.nishgrid.clienterp.controller.OldGoldExchangeController"
+            fitToWidth="true" fitToHeight="true" styleClass="root"
+            stylesheets="@css/validation.css">
+
+    <content>
+        <VBox spacing="20" styleClass="main-container" style="-fx-padding: 25;">
+
+            <HBox spacing="20">
+                <TitledPane text="Seller Information" expanded="true" HBox.hgrow="ALWAYS">
+                    <FlowPane hgap="15" vgap="15" style="-fx-padding: 15;">
+                        <VBox spacing="5">
+                            <Label>
+                                <graphic><TextFlow><Text text="Name: "/><Text text="*" style="-fx-fill: red;"/></TextFlow></graphic>
+                            </Label>
+                            <TextField fx:id="sellerNameField" promptText="Enter Seller Name" prefWidth="250"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label>
+                                <graphic><TextFlow><Text text="Mobile: "/><Text text="*" style="-fx-fill: red;"/></TextFlow></graphic>
+                            </Label>
+                            <TextField fx:id="sellerMobileField" promptText="10-Digit Mobile Number" prefWidth="250"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Address:"/>
+                            <TextArea fx:id="sellerAddressField" promptText="Enter Full Address" prefRowCount="3" prefWidth="250"/>
+                        </VBox>
+                    </FlowPane>
+                </TitledPane>
+
+                <TitledPane text="Purchase Details" expanded="true" HBox.hgrow="ALWAYS">
+                    <FlowPane hgap="15" vgap="15" style="-fx-padding: 15;">
+                        <VBox spacing="5">
+                            <Label text="Purchase Bill No:"/>
+                            <TextField fx:id="purchaseBillNoField" editable="false" promptText="Auto-Generated" prefWidth="250"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label>
+                                <graphic><TextFlow><Text text="Purchase Date: "/><Text text="*" style="-fx-fill: red;"/></TextFlow></graphic>
+                            </Label>
+                            <DatePicker fx:id="purchaseDatePicker" prefWidth="250" promptText="dd/MM/yyyy"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Payout Mode:"/>
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <ComboBox fx:id="payoutModeBox" prefWidth="150.0" promptText="Select Mode">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Cash"/>
+                                            <String fx:value="UPI"/>
+                                            <String fx:value="Card"/>
+                                            <String fx:value="Bank Transfer"/>
+                                            <String fx:value="Other"/>
+                                        </FXCollections>
+                                    </items>
+                                </ComboBox>
+                                <TextField fx:id="otherPayoutModeField" promptText="Specify Mode" visible="false" managed="false"/>
+                            </HBox>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Remarks:"/>
+                            <TextArea fx:id="remarksField" promptText="Add any notes here" prefRowCount="3" prefWidth="250"/>
+                        </VBox>
+                    </FlowPane>
+                </TitledPane>
+            </HBox>
+
+            <TitledPane text="Items Purchased (Old Gold/Jewellery)" expanded="true" VBox.vgrow="ALWAYS">
+                <content>
+                    <VBox spacing="15" style="-fx-padding: 15;">
+                        <GridPane hgap="15" vgap="10">
+                            <columnConstraints>
+                                <ColumnConstraints minWidth="150" halignment="RIGHT"/>
+                                <ColumnConstraints minWidth="220" hgrow="ALWAYS"/>
+                                <ColumnConstraints minWidth="150" halignment="RIGHT"/>
+                                <ColumnConstraints minWidth="220" hgrow="ALWAYS"/>
+                            </columnConstraints>
+
+                            <Label text="Item Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <TextField fx:id="itemNameField" promptText="e.g., Gold Ring" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                            <Label text="Metal Type:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                            <ComboBox fx:id="metalTypeBox" prefWidth="220.0" promptText="Select Metal" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                                <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Gold"/>
+                                        <String fx:value="Silver"/>
+                                        <String fx:value="Platinum"/>
+                                        <String fx:value="Other"/>
+                                    </FXCollections>
+                                </items>
+                            </ComboBox>
+
+                            <Label text="Purity:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                            <TextField fx:id="purityField" promptText="e.g., 22K" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                            <Label text="Gross Wt (g):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                            <TextField fx:id="grossWeightField" promptText="0.0" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                            <Label text="Wastage %:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                            <TextField fx:id="wastagePercentField" promptText="e.g., 5.0" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                            <Label text="Net Wt (g):" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                            <TextField fx:id="netWeightField" promptText="Auto-Calculated" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                            <Label text="Rate/Gram:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                            <TextField fx:id="ratePerGramField" promptText="0.00" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                            <Label text="Diamond Carat:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                            <TextField fx:id="diamondCaratField" promptText="0.00" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+                            <Label text="Diamond Rate/Carat:" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                            <TextField fx:id="diamondRateField" promptText="0.00" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+                            <Label text="Fixed Deduction (Amt):" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+                            <TextField fx:id="deductionChargeField" promptText="0.00" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+                            <Label text="Total Item Value:" GridPane.rowIndex="5" GridPane.columnIndex="2" style="-fx-font-weight: bold;"/>
+                            <TextField fx:id="totalItemValueField" promptText="Auto-Calculated" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="3" style="-fx-font-weight: bold;"/>
+                        </GridPane>
+
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Button fx:id="addItemButton" text="Add Item" onAction="#handleAddItem" prefWidth="120"/>
+                            <Button text="Edit Selected Item" onAction="#handleEditSelectedItem" prefWidth="150"/>
+                            <Button text="Delete Selected Item" onAction="#handleDeleteItem" prefWidth="150" styleClass="delete-button"/>
+                        </HBox>
+
+                        <TableView fx:id="purchaseItemTableView" editable="true" VBox.vgrow="ALWAYS" minHeight="250.0">
+                            <columns>
+                                <TableColumn fx:id="itemNameColumn" text="Item Name"/>
+                                <TableColumn fx:id="metalTypeColumn" text="Metal"/>
+                                <TableColumn fx:id="purityColumn" text="Purity"/>
+                                <TableColumn fx:id="grossWeightColumn" text="Gross Wt"/>
+                                <TableColumn fx:id="netWeightColumn" text="Net Wt (g)"/>
+                                <TableColumn fx:id="wastagePercentColumn" text="Wastage %"/>
+                                <TableColumn fx:id="ratePerGramColumn" text="Rate/Gram"/>
+                                <TableColumn fx:id="diamondCaratColumn" text="Diamond Ct"/>
+                                <TableColumn fx:id="deductionChargeColumn" text="Deduction"/>
+                            </columns>
+                            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                        </TableView>
+                    </VBox>
+                </content>
+            </TitledPane>
+
+            <HBox spacing="20" alignment="BOTTOM_RIGHT" style="-fx-padding: 10 0 0 0;">
+
+                <Region HBox.hgrow="ALWAYS"/>
+                <VBox spacing="10" alignment="BOTTOM_RIGHT">
+                    <GridPane hgap="10" vgap="8">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="NEVER" minWidth="180"/>
+                            <ColumnConstraints hgrow="ALWAYS" minWidth="180"/>
+                        </columnConstraints>
+
+                        <Label text="Total Purchase Value:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight: bold;"/>
+                        <TextField fx:id="totalPurchaseValueField" editable="false" promptText="0.00" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-font-weight: bold;"/>
+
+                        <Label text="Processing Fee (%):" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="processingFeePercentField" promptText="0.00" text="0.00" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Processing Fee (Amt):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="processingFeeAmountField" editable="false" promptText="0.00" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="NET PAYABLE AMOUNT:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: green;"/>
+                        <TextField fx:id="netPayableAmountField" editable="false" promptText="0.00" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: green;"/>
+                    </GridPane>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="10" alignment="BOTTOM_RIGHT">
+                <Button text="CREATE PURCHASE EXCHANGE BILL" onAction="#handleSubmit" prefHeight="50" styleClass="create-button"/>
+            </HBox>
+        </VBox>
+    </content>
+</ScrollPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.nishgrid.clienterp.controller.EmployeeTabController"
+            prefWidth="1000" prefHeight="600">
+
+    <VBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+        <!-- Search Bar -->
+        <HBox spacing="10">
+            <Label text="Search Employee Code:"/>
+            <TextField fx:id="searchField" promptText="Enter Employee Code..." />
+        </HBox>
+
+        <!-- Employee Table -->
+        <TableView fx:id="employeeTable" prefHeight="500">
+            <columns>
+                <TableColumn fx:id="idCol" text="ID"/>
+                <TableColumn fx:id="codeCol" text="Code"/>
+                <TableColumn fx:id="nameCol" text="Name"/>
+                <TableColumn fx:id="genderCol" text="Gender"/>
+                <TableColumn fx:id="dobCol" text="DOB"/>
+                <TableColumn fx:id="dojCol" text="DOJ"/>
+                <TableColumn fx:id="departmentCol" text="Department"/>
+                <TableColumn fx:id="designationCol" text="Designation"/>
+                <TableColumn fx:id="mobile1Col" text="Mobile 1"/>
+                <TableColumn fx:id="mobile2Col" text="Mobile 2"/>
+                <TableColumn fx:id="emailCol" text="Email"/>
+                <TableColumn fx:id="aadhaarCol" text="Aadhaar"/>
+                <TableColumn fx:id="panCol" text="PAN"/>
+                <TableColumn fx:id="aadhaarDocCol" text="Aadhaar Doc"/>
+                <TableColumn fx:id="panDocCol" text="PAN Doc"/>
+                <TableColumn fx:id="addressCol" text="Address"/>
+                <TableColumn fx:id="statusCol" text="Status"/>
+                <TableColumn fx:id="photoCol" text="Photo"/>
+                <TableColumn fx:id="fingerprintCol" text="Fingerprint"/>
+                <TableColumn fx:id="editCol" text="Edit"/>
+                <TableColumn fx:id="viewCol" text="View"/>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

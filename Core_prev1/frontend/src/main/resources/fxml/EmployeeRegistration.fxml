@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.nishgrid.clienterp.controller.EmployeeRegistrationController">
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <VBox spacing="10">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                <children>
+                    <Label text="Employee Registration" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+                    <GridPane hgap="10" vgap="10">
+                        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+
+                        <Label text="Full Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="fullNameField" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+                        <Label text="Gender:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <ChoiceBox fx:id="genderChoice" prefWidth="150.0" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Male"/>
+                                    <String fx:value="Female"/>
+                                    <String fx:value="Other"/>
+                                </FXCollections>
+                            </items>
+                        </ChoiceBox>
+
+                        <Label text="DOB:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                        <DatePicker fx:id="dobPicker" prefWidth="150.0" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+                        <Label text="DOJ:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <DatePicker fx:id="dojPicker" prefWidth="150.0" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Department:" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                        <TextField fx:id="departmentField" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+                        <Label text="Designation:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <TextField fx:id="designationField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Mobile 1:" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+                        <TextField fx:id="mobile1Field" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+                        <Label text="Mobile 2:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <TextField fx:id="mobile2Field" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Email:" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+                        <TextField fx:id="emailField" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+
+                        <Label text="Aadhaar No.:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <TextField fx:id="aadhaarNumberField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                        <Label text="PAN No.:" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+                        <TextField fx:id="panNumberField" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+
+                        <Label text="Aadhaar Document:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                        <HBox spacing="5" GridPane.rowIndex="6" GridPane.columnIndex="1" GridPane.columnSpan="3">
+                            <TextField fx:id="aadhaarDocField" HBox.hgrow="ALWAYS"/>
+                            <Button text="Browse" onAction="#handleBrowseAadhaar"/>
+                        </HBox>
+
+                        <Label text="PAN Document:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                        <HBox spacing="5" GridPane.rowIndex="7" GridPane.columnIndex="1" GridPane.columnSpan="3">
+                            <TextField fx:id="panDocField" HBox.hgrow="ALWAYS"/>
+                            <Button text="Browse" onAction="#handleBrowsePan"/>
+                        </HBox>
+
+                        <Label text="Photo:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+                        <HBox spacing="5" GridPane.rowIndex="8" GridPane.columnIndex="1" GridPane.columnSpan="3">
+                            <TextField fx:id="photoField" HBox.hgrow="ALWAYS"/>
+                            <Button text="Browse" onAction="#handleBrowsePhoto"/>
+                        </HBox>
+
+                        <Label text="Fingerprint:" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+                        <HBox spacing="5" GridPane.rowIndex="9" GridPane.columnIndex="1" GridPane.columnSpan="3">
+                            <TextField fx:id="fingerprintField" HBox.hgrow="ALWAYS"/>
+                            <Button text="Browse" onAction="#handleBrowseFingerprint"/>
+                        </HBox>
+
+                        <Label text="Address:" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+                        <TextArea fx:id="addressArea" prefRowCount="3" GridPane.rowIndex="10" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+                        <Label text="Status:" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+                        <ChoiceBox fx:id="statusChoice" prefWidth="150.0" GridPane.rowIndex="11" GridPane.columnIndex="1">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Active"/>
+                                    <String fx:value="Resigned"/>
+                                    <String fx:value="Terminated"/>
+                                </FXCollections>
+                            </items>
+                        </ChoiceBox>
+
+                        <Label text="Salary Details" style="-fx-font-weight: bold;" GridPane.rowIndex="12" GridPane.columnIndex="0" GridPane.columnSpan="4"/>
+
+                        <Label text="Basic Salary:" GridPane.rowIndex="13" GridPane.columnIndex="0"/>
+                        <TextField fx:id="basicSalaryField" GridPane.rowIndex="13" GridPane.columnIndex="1"/>
+
+                        <Label text="HRA:" GridPane.rowIndex="13" GridPane.columnIndex="2"/>
+                        <TextField fx:id="hraField" GridPane.rowIndex="13" GridPane.columnIndex="3"/>
+
+                        <Label text="Other Allowances:" GridPane.rowIndex="14" GridPane.columnIndex="0"/>
+                        <TextField fx:id="otherAllowancesField" GridPane.rowIndex="14" GridPane.columnIndex="1"/>
+
+                        <Label text="PF Deduction:" GridPane.rowIndex="14" GridPane.columnIndex="2"/>
+                        <TextField fx:id="pfDeductionField" GridPane.rowIndex="14" GridPane.columnIndex="3"/>
+
+                        <Label text="ESI Deduction:" GridPane.rowIndex="15" GridPane.columnIndex="0"/>
+                        <TextField fx:id="esiDeductionField" GridPane.rowIndex="15" GridPane.columnIndex="1"/>
+
+                        <Label text="TDS Deduction:" GridPane.rowIndex="15" GridPane.columnIndex="2"/>
+                        <TextField fx:id="tdsDeductionField" GridPane.rowIndex="15" GridPane.columnIndex="3"/>
+
+                    </GridPane>
+
+
+                    <HBox spacing="10" alignment="CENTER_RIGHT">
+                        <padding>
+                            <Insets top="20"/>
+                        </padding>
+
+                        <Button text="Save" onAction="#handleSave" defaultButton="true">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@/save.jpeg" />
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Button text="Reset" onAction="#handleReset">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@/cancel.png" />
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                </children>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

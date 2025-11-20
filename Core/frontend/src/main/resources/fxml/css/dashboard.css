@@ -1,0 +1,553 @@
+ .header-bar {
+    -fx-background-color: #3f51b5;
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
+
+.header-label {
+    -fx-text-fill: green;
+    -fx-font-weight: bold;
+}
+
+.logout-btn {
+    -fx-background-color: #e53935;
+    -fx-text-fill: white;
+}
+
+.sidebar {
+    -fx-background-color: #263238;
+    -fx-spacing: 4;
+}
+
+.sidebar-btn {
+    -fx-background-color: #37474f;
+    -fx-text-fill: white;
+    -fx-pref-width: 220;
+    -fx-alignment: center-left;
+    -fx-padding: 5 10;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: #455a64;
+}
+
+.sidebar-titled > .title {
+    -fx-background-color: #37474f;
+    -fx-text-fill: white;
+    -fx-padding: 5 10;
+}
+
+.sidebar-titled > .title:hover {
+    -fx-background-color: #455a64;
+}
+
+.sidebar-subbtn {
+    -fx-background-color: #455a64;
+    -fx-text-fill: white;
+    -fx-pref-width: 200;
+    -fx-padding: 3 8;
+}
+
+.sidebar-subbtn:hover {
+    -fx-background-color: #546e7a;
+}
+
+.main-content {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20;
+}
+
+.welcome-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333;
+}/* Root Pane - Background Image */
+ #rootPane {
+     -fx-background-image: url('/Screenshot (317).jpg'); /* New background image */
+     -fx-background-size: cover; /* This makes the image cover the entire area */
+     -fx-background-position: center center; /* Centers the image */
+     -fx-background-repeat: no-repeat; /* Prevents tiling */
+ }
+
+ /* Date and Time Labels */
+ .date-time-container {
+     -fx-spacing: 5.0;
+ }
+
+ .date-time-label {
+     -fx-text-fill: red; /* Kept red as in original FXML, adjust if needed */
+     -fx-font-size: 14px;
+     -fx-font-weight: bold;
+ }
+
+ /* Login Form Container */
+ .login-form-container {
+     -fx-background-color: linear-gradient(to bottom, #ffe6e6, #ffffff); /* Light pink/red to white gradient */
+     -fx-background-radius: 15;
+     -fx-padding: 25;
+     -fx-spacing: 15.0;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 5);
+     -fx-border-color: #dcdcdc;
+     -fx-border-width: 1px;
+     -fx-border-radius: 15;
+ }
+
+ /* Form Header (Sign In and Welcome) */
+ .form-header {
+     -fx-padding: 0 0 10 0; /* Padding at the bottom */
+ }
+
+ .header-sign-in-label {
+     -fx-font-size: 14px;
+     -fx-font-weight: bold;
+     -fx-text-fill: #666666; /* Darker grey */
+ }
+
+ .header-welcome-label {
+     -fx-font-size: 14px;
+     -fx-font-weight: bold;
+     -fx-text-fill: maroon;
+ }
+
+ /* Welcome Back Label */
+ .welcome-back-label {
+     -fx-font-size: 24px; /* Larger font */
+     -fx-font-weight: bold;
+     -fx-text-fill: maroon;
+     -fx-padding: 5 0 0 0;
+ }
+
+ /* Sub Text Label */
+ .sub-text-label {
+     -fx-text-fill: #555555;
+     -fx-font-size: 14px;
+     -fx-padding: 0 0 10 0;
+ }
+
+ /* Input Labels (User Name, Password) */
+ .input-label {
+     -fx-font-size: 13px;
+     -fx-text-fill: #333333;
+     -fx-font-weight: bold;
+ }
+
+ /* Input Fields with Icons */
+ .input-field-with-icon {
+     -fx-spacing: 10;
+     -fx-alignment: CENTER_LEFT;
+     -fx-background-color: white; /* White background for the input area */
+     -fx-background-radius: 5px;
+     -fx-border-color: #cccccc;
+     -fx-border-width: 1px;
+     -fx-padding: 5 10; /* Padding inside the HBox */
+ }
+
+ /* TextFields and PasswordFields inside input-field-with-icon */
+ .input-field-with-icon .text-field,
+ .input-field-with-icon .password-field {
+     -fx-background-color: transparent; /* Make text field background transparent */
+     -fx-border-color: transparent; /* Remove border from text field itself */
+     -fx-border-width: 0;
+     -fx-padding: 0; /* Remove padding from text field, it's on the HBox */
+     -fx-prompt-text-fill: #888888;
+ }
+
+ .input-field-with-icon:focused-within { /* Apply focus style to the HBox */
+     -fx-border-color: maroon;
+     -fx-effect: dropshadow(gaussian, rgba(128,0,0,0.2), 5, 0, 0, 0);
+ }
+
+
+ /* Remember Me Checkbox and Forgot Password Button Container */
+ .remember-forgot-container {
+     -fx-padding: 10 0;
+ }
+
+ /* Remember Me Checkbox */
+ .remember-me-checkbox {
+     -fx-font-size: 13px;
+     -fx-text-fill: #333333;
+ }
+
+ /* Main Action Buttons (Login, Close Application, Sign In, Forgot Password) */
+ .main-action-button {
+     -fx-background-color: #f0f0f0; /* Light grey background */
+     -fx-text-fill: #333333; /* Dark text */
+     -fx-font-weight: bold;
+     -fx-font-size: 16px;
+     -fx-padding: 10 20;
+     -fx-background-radius: 8px;
+     -fx-cursor: hand;
+     -fx-pref-width: 100%; /* Full width within its container */
+     -fx-alignment: CENTER;
+     -fx-border-color: #cccccc; /* Light border */
+     -fx-border-width: 1px;
+ }
+ .main-action-button:hover {
+     -fx-background-color: #e0e0e0; /* Slightly darker grey on hover */
+ }
+
+ /* Message Label */
+ .message-label {
+     -fx-text-fill: red;
+     -fx-font-weight: bold;
+     -fx-font-size: 14px;
+     -fx-padding: 10 0 0 0;
+ }
+
+ /* Footer Label */
+ .footer-label {
+     -fx-text-fill: darkmagenta;
+     -fx-font-size: 12px;
+     -fx-font-weight: bold;
+ }
+/* General Styling for the Root VBox */
+#rootVBox {
+    -fx-background-color: #f5f7fa; /* Light background for the dashboard */
+    -fx-padding: 20; /* Overall padding for the content */
+    -fx-spacing: 25; /* Increased spacing between major sections */
+}
+
+/* Section Titles */
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark grey for text */
+    -fx-padding: 0 0 10px 0; /* Padding below title */
+    -fx-alignment: CENTER;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: #ffffff; /* White background for tables */
+    -fx-border-color: #e0e0e0; /* Light grey border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px; /* Slightly rounded corners for tables */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5); /* Subtle shadow */
+    -fx-font-size: 13px;
+}
+
+/* TableView Header */
+.table-view .column-header-background {
+    -fx-background-color: #4CAF50; /* Green header background */
+    -fx-background-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* White text for headers */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* TableView Rows */
+.table-view .table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, #ffffff; /* Default row color */
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 5px 0; /* Padding for row cells */
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, #f9f9f9; /* Light grey for odd rows */
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #b0e0e6; /* Light blue for selected rows */
+    -fx-text-fill: #333333;
+}
+
+/* TableView Cells */
+.table-view .table-cell {
+    -fx-alignment: CENTER; /* Center align cell content */
+    -fx-border-color: transparent; /* Remove individual cell borders */
+}
+
+/* TableView Placeholder (No data) */
+.table-view .placeholder .label {
+    -fx-text-fill: #888888;
+    -fx-font-style: italic;
+    -fx-font-size: 14px;
+}
+
+/* Shortcut Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #4CAF50); /* Green gradient */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 20px; /* Pill-shaped buttons */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2); /* Subtle shadow */
+    -fx-cursor: hand;
+    -fx-border-color: #388e3c; /* Darker green border */
+    -fx-border-width: 1px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #81c784, #66bb6a); /* Lighter green on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3); /* More pronounced shadow on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #388e3c; /* Darkest green when pressed */
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 0); /* Inner shadow for pressed effect */
+}
+/* Define a color palette for consistency */
+.root {
+    -primary-color: #42A5F5; /* A vibrant blue */
+    -secondary-color: #64B5F6; /* A lighter blue */
+    -background-light: #F0F2F5; /* Light grey background */
+    -background-card: #FFFFFF; /* White for card-like sections */
+    -text-dark: #333333; /* Dark grey for main text */
+    -text-medium: #666666; /* Medium grey for secondary text */
+    -border-color: #E0E0E0; /* Light border color */
+    -hover-color: #BBDEFB; /* Light blue for hover effects */
+    -accent-green: #81C784; /* For success/positive indicators */
+    -accent-red: #E57373; /* For error/negative indicators */
+}
+
+/* Overall dashboard styling */
+.dashboard-root {
+    -fx-background-color: -background-light;
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI", "Roboto", "Open Sans", "Arial", sans-serif;
+}
+
+/* Styling for section containers (HBoxes holding tables) */
+.section-container {
+    -fx-background-color: -background-card;
+    -fx-background-radius: 12; /* Rounded corners */
+    -fx-border-radius: 12;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0, 5); /* Subtle shadow */
+    -fx-padding: 20;
+}
+
+/* Section titles */
+.section-title {
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-text-fill: -text-dark;
+    -fx-padding: 0 0 10 0;
+}
+
+/* TableView general styling */
+.table-view {
+    -fx-background-color: -background-card;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-table-cell-border-color: transparent; /* Remove internal cell borders */
+    -fx-padding: 0;
+}
+
+/* TableView placeholder (no data message) */
+.table-view .placeholder .label {
+    -fx-text-fill: -text-medium;
+    -fx-font-style: italic;
+    -fx-font-size: 1.0em;
+}
+
+/* TableView column header background */
+.table-view .column-header-background {
+    -fx-background-color: -primary-color; /* Blue background for headers */
+    -fx-background-radius: 8 8 0 0; /* Rounded top corners */
+    -fx-padding: 8 0 8 0;
+}
+
+/* TableView column header text */
+.table-view .column-header .label {
+    -fx-text-fill: white; /* White text for headers */
+    -fx-font-weight: bold;
+    -fx-font-size: 0.95em;
+}
+
+/* TableView table cells */
+.table-view .table-cell {
+    -fx-alignment: CENTER; /* Center align cell content */
+    -fx-text-fill: -text-dark;
+    -fx-font-size: 0.9em;
+    -fx-padding: 8 5;
+}
+
+/* TableView row styling */
+.table-view .table-row-cell {
+    -fx-background-color: -background-card; /* Default row background */
+    -fx-background-insets: 0;
+    -fx-cell-hover-background: -hover-color; /* Hover background */
+}
+
+/* Alternating row colors for better readability */
+.table-view .table-row-cell:odd {
+    -fx-background-color: derive(-background-card, -2%); /* Slightly darker for odd rows */
+}
+
+/* Selected row styling */
+.table-view .table-row-cell:selected {
+    -fx-background-color: -secondary-color; /* Highlight selected row */
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+/* Scroll bar styling (optional, but can enhance look) */
+.table-view .scroll-bar:vertical .thumb,
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: derive(-primary-color, 20%);
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+}
+
+.table-view .scroll-bar:vertical .track,
+.table-view .scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* Shortcut buttons container */
+.button-container {
+    -fx-background-color: -background-card;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0, 5);
+    -fx-padding: 20;
+    -fx-alignment: CENTER;
+}
+
+/* Action buttons styling */
+.action-button {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: white;
+    -fx-font-size: 1.0em;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand; /* Changes cursor to hand on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.5, 0, 3); /* Subtle shadow */
+    -fx-transition: -fx-background-color 0.2s ease, -fx-effect 0.2s ease, -fx-scale-x 0.2s ease, -fx-scale-y 0.2s ease; /* Smooth transitions */
+}
+
+.action-button:hover {
+    -fx-background-color: derive(-primary-color, -10%); /* Darker blue on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0.6, 0, 4); /* More pronounced shadow */
+    -fx-scale-x: 1.02; /* Slightly scale up on hover */
+    -fx-scale-y: 1.02;
+}
+
+.action-button:pressed {
+    -fx-background-color: derive(-primary-color, -20%); /* Even darker when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.7, 0, 2); /* Smaller shadow when pressed */
+    -fx-scale-x: 0.98; /* Slightly scale down when pressed */
+    -fx-scale-y: 0.98;
+}
+/* Apply styles to the root StackPane */
+.root-pane {
+    /* Set the background image to cover the entire pane */
+    -fx-background-image: url('/');
+    -fx-background-size: cover; /* Ensures the image covers the entire area */
+    -fx-background-position: center center; /* Centers the image */
+    -fx-background-repeat: no-repeat; /* Prevents image from repeating */
+    -fx-background-color: #333; /* Fallback background color */
+}
+
+/* Style for the "Change Photo" button */
+.change-photo-button {
+    -fx-background-color: #6A0DAD; /* Deep Purple */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 25px;
+    -fx-border-radius: 30px; /* Rounded corners for a pill shape */
+    -fx-background-radius: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 15, 0.5, 0, 5); /* Stronger shadow */
+    -fx-cursor: hand; /* Changes cursor to hand on hover */
+    /* Add transition for smooth hover effects (requires JavaFX 9+) */
+    -fx-transition: -fx-background-color 0.3s ease, -fx-effect 0.3s ease, -fx-scale-x 0.3s ease, -fx-scale-y 0.3s ease;
+}
+
+.change-photo-button:hover {
+    -fx-background-color: #8A2BE2; /* Lighter purple on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 20, 0.7, 0, 8); /* More prominent shadow on hover */
+    -fx-scale-x: 1.05; /* Slightly enlarge on hover */
+    -fx-scale-y: 1.05;
+}
+
+.change-photo-button:pressed {
+    -fx-background-color: #580DA6; /* Even darker purple when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.3, 0, 2);
+    -fx-scale-x: 0.98; /* Slightly shrink when pressed */
+    -fx-scale-y: 0.98;
+}
+
+/* Style for the client ImageView */
+.client-image-view {
+    /* Make the image circular */
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-shape: "M 0 0 L 100 0 L 100 100 L 0 100 Z"; /* This is a workaround for clipping in JavaFX CSS */
+    -fx-clip: insets(0); /* Ensure the clip is applied */
+
+    /* Add a strong shadow and a border */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 25, 0.6, 0, 10); /* Deeper, more spread shadow */
+    -fx-border-color: #FFD700; /* Gold border */
+    -fx-border-width: 5px;
+    -fx-border-style: solid;
+    -fx-padding: 0; /* Remove any default padding */
+}
+
+
+
+/* Styling for the root pane of the application */
+.root-pane {
+    -fx-background-color: #f0f2f5; /* A soft, light gray background */
+}
+
+/* Styling for the ImageView that displays the client's photo */
+.client-image-view {
+    /* Apply a subtle drop shadow for depth */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 0, 8);
+    /* Add a white border around the image */
+    -fx-border-color: #ffffff;
+    -fx-border-width: 6;
+    /* Make the border and background rounded */
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    /* Fallback background color if image isn't loaded */
+    -fx-background-color: #e0e0e0;
+    /* Ensure the image itself respects the rounded corners */
+    -fx-clip: insets(0); /* This helps with clipping the image to the rounded corners */
+}
+
+/* Styling for the "Change Photo" button */
+.change-photo-button {
+    /* Gradient background for a modern look */
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45a049);
+    -fx-text-fill: white; /* White text for contrast */
+    -fx-font-size: 15px;
+    -fx-padding: 12px 25px; /* Comfortable padding */
+    -fx-border-radius: 8px; /* Slightly rounded corners for the button */
+    -fx-background-radius: 8px;
+    /* Subtle drop shadow for the button */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 3);
+    -fx-cursor: hand; /* Indicate it's clickable */
+    -fx-font-weight: bold; /* Make the text bold */
+}
+
+/* Hover effect for the button */
+.change-photo-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #45a049, #388e3c); /* Darker green on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+}
+
+/* Pressed effect for the button */
+.change-photo-button:pressed {
+    -fx-background-color: #388e3c; /* Even darker green when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-translate-y: 1px; /* Slight press effect */
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.nishgrid.clienterp.controller.DashboardContentController"
+      fx:id="rootVBox"
+      alignment="TOP_CENTER"
+      spacing="15"
+      stylesheets="@dashboard.css"
+      styleClass="dashboard-root">
+
+    <HBox alignment="CENTER_LEFT" spacing="10" styleClass="section-container">
+        <padding>
+            <Insets top="10" right="15" bottom="10" left="15"/>
+        </padding>
+        <Label text="Select Financial Year:" styleClass="section-title"/>
+        <ComboBox fx:id="financialYearCombo" prefWidth="120" onAction="#handleFinancialYearChange"/>
+        <Label fx:id="financialYearStatus" text="" styleClass="status-label"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20" styleClass="section-container">
+        <padding>
+            <Insets top="15" right="15" bottom="15" left="15"/>
+        </padding>
+
+        <VBox spacing="8" alignment="TOP_CENTER">
+            <Label styleClass="section-title" text="Today Sales Details"/>
+            <TableView fx:id="todaySalesTable" prefWidth="250" prefHeight="180" minHeight="180">
+                <placeholder><Label text="No data to display"/></placeholder>
+                <columns>
+                    <TableColumn fx:id="salesDateCol" text="Date" prefWidth="125"/>
+                    <TableColumn fx:id="salesTotalCol" text="Total Amount" prefWidth="125"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20" styleClass="section-container">
+        <padding>
+            <Insets top="15" right="15" bottom="15" left="15"/>
+        </padding>
+
+        <VBox spacing="8" alignment="TOP_CENTER">
+            <Label styleClass="section-title" text="Monthly Profit / Loss"/>
+            <TableView fx:id="monthlyProfitTable" prefWidth="400" prefHeight="180" minHeight="180">
+                <placeholder><Label text="No data to display"/></placeholder>
+                <columns>
+                    <TableColumn fx:id="monthlyFromCol" text="From Date" prefWidth="133"/>
+                    <TableColumn fx:id="monthlyToCol" text="To Date" prefWidth="133"/>
+                    <TableColumn fx:id="monthlyProfitCol" text="Profit / Loss" prefWidth="134"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+        <VBox spacing="8" alignment="TOP_CENTER">
+            <Label styleClass="section-title" text="Yearly Profit / Loss"/>
+            <TableView fx:id="yearlyProfitTable" prefWidth="400" prefHeight="180" minHeight="180">
+                <placeholder><Label text="No data to display"/></placeholder>
+                <columns>
+                    <TableColumn fx:id="yearlyYearCol" text="Year" prefWidth="200"/>
+                    <TableColumn fx:id="yearlyProfitCol" text="Profit / Loss" prefWidth="200"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+</VBox>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.nishgrid.clienterp.controller.EmployeeListController"
+      spacing="10" style="-fx-padding: 10;">
+    <children>
+        <!-- Search Bar Area -->
+        <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 5;">
+            <children>
+                <Label text="Search Employee:">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="searchField" promptText="Enter Name or Employee Code..." HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+
+        <!-- Employee Table -->
+        <TableView fx:id="employeeTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colEmployeeCode" text="Employee Code" prefWidth="120"/>
+                <TableColumn fx:id="colFullName" text="Full Name" prefWidth="200"/>
+                <TableColumn fx:id="colDepartment" text="Department" prefWidth="150"/>
+                <TableColumn fx:id="colDesignation" text="Designation" prefWidth="150"/>
+                <TableColumn fx:id="colActions" text="Actions" prefWidth="120"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</VBox>

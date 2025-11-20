@@ -1,0 +1,17 @@
+*.jar
+*.sql
+*.db
+*.sqlite
+*.log
+*.zip
+*.tar
+*.gz
+*.7z
+*.dump
+
+node_modules/
+build/
+dist/
+target/
+out/
+.DS_Store

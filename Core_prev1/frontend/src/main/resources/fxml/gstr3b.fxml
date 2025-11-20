@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.nishgrid.clienterp.controller.Gstr3bController">
+    <top>
+        <Label text="GSTR-3B Monthly Summary"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Generate for Month (YYYY-MM):"/>
+                <TextField fx:id="monthYearField" promptText="e.g., 2025-08"/>
+                <Button text="Generate Summary" onAction="#handleGenerateSummary"/>
+            </HBox>
+
+            <TableView fx:id="gstr3bTable" prefHeight="400">
+                <columns>
+                    <TableColumn fx:id="monthCol" text="Month" prefWidth="100"/>
+                    <TableColumn fx:id="outwardCol" text="Outward Supplies" prefWidth="150"/>
+                    <TableColumn fx:id="inwardCol" text="Inward Supplies" prefWidth="150"/>
+                    <TableColumn fx:id="igstCol" text="IGST" prefWidth="100"/>
+                    <TableColumn fx:id="cgstCol" text="CGST" prefWidth="100"/>
+                    <TableColumn fx:id="sgstCol" text="SGST" prefWidth="100"/>
+                    <TableColumn fx:id="statusCol" text="Filed Status" prefWidth="120"/>
+                    <TableColumn fx:id="filedDateCol" text="Filed Date" prefWidth="150"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <Button fx:id="refreshButton" text="Refresh"/>
+        </HBox>
+    </bottom>
+</BorderPane>

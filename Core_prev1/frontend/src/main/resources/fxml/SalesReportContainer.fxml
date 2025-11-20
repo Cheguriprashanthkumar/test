@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml"
+         tabClosingPolicy="UNAVAILABLE">
+    <tabs>
+        <Tab text="Sales Audit  Management">
+            <content>
+                <fx:include source="SalesAuditView.fxml"/>
+            </content>
+        </Tab>
+
+        <Tab text="Summary Reports">
+            <content>
+                <fx:include source="sales_reports.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
