@@ -1,0 +1,94 @@
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #3f51b5;
+    -fx-padding: 4px 8px;
+    -fx-background-radius: 6px 6px 0 0;
+    -fx-spacing: 10px;
+    -fx-min-width: 280px;
+    -fx-pref-width: 280px;
+    -fx-max-width: 280px;
+    -fx-alignment: center;
+}
+
+.date-picker-popup .month-year-pane .spinner {
+    -fx-spacing: 4px;
+    -fx-alignment: center;
+    -fx-pref-width: 120px;
+    -fx-min-width: 120px;
+    -fx-max-width: 120px;
+}
+
+.date-picker-popup .month-year-pane .spinner.month {
+    -fx-alignment: center-left;
+}
+
+.date-picker-popup .month-year-pane .spinner.year {
+    -fx-alignment: center-right;
+}
+
+.date-picker-popup .month-year-pane .spinner .arrow-button {
+    -fx-opacity: 1;
+    -fx-background-color: transparent;
+    -fx-padding: 2 4;
+    -fx-min-width: 16;
+    -fx-min-height: 16;
+    -fx-max-width: 16;
+    -fx-max-height: 16;
+    -fx-background-radius: 4px;
+}
+
+.date-picker-popup .month-year-pane .spinner .arrow-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+.date-picker-popup .month-year-pane .spinner.month .label,
+.date-picker-popup .month-year-pane .spinner.year .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.date-picker-popup .month-year-pane .spinner.month .label {
+    -fx-padding: 0 6 0 0;
+}
+
+.date-picker-popup .month-year-pane .spinner.year .label {
+    -fx-padding: 0 0 0 6;
+}
+
+.date-picker .editor {
+    -fx-background-color: white;
+    -fx-border-color: #c7c7c7;
+    -fx-border-radius: 4px;
+    -fx-padding: 4 6 4 6;
+}
+
+.custom-date-arrow {
+    -fx-padding: 2 6 2 6;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.create-button {
+    -fx-background-color: linear-gradient(#2a7ae2, #245ec9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+}
+
+.delete-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+}
+
+.root {
+    -fx-font-family: "Segoe UI", Arial;
+}
+
+.titled-pane > .title {
+    -fx-font-weight: bold;
+}
+
+.table-view {
+    -fx-border-color: #e0e0e0;
+}

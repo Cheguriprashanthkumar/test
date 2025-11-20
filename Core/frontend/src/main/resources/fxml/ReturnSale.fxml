@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<SplitPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.nishgrid.clienterp.controller.ReturnSaleController"
+           dividerPositions="0.4" style="-fx-background-color: #f0f2f5;" stylesheets="@css/validation.css">
+    <items>
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+            <content>
+                <VBox spacing="15" alignment="TOP_CENTER" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);">
+                    <Label text="Return Sale Form" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+
+                    <VBox spacing="15">
+                        <VBox spacing="5">
+                            <Label text="Estimated No:"/>
+                            <ComboBox fx:id="invoiceComboBox" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Available Items to Return:"/>
+                            <TableView fx:id="availableItemsTable" prefHeight="200" maxWidth="Infinity" style="-fx-background-color: white;">
+                                <placeholder>
+                                    <Label text="Select an Estimated to view items"/>
+                                </placeholder>
+                                <columns>
+                                    <TableColumn text="Item" fx:id="colAvailableItem" prefWidth="150"/>
+                                    <TableColumn text="Qty Sold" fx:id="colAvailableQty" prefWidth="150"/>
+                                    <TableColumn text="Price" fx:id="colAvailablePrice" prefWidth="0"
+                                                 visible="false"/>
+                                </columns>
+                            </TableView>
+                        </VBox>
+
+                        <HBox spacing="10" alignment="CENTER">
+                            <Button fx:id="addToReturnListButton" text="Add to Return List" onAction="#handleAddToReturnList"
+                                    style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 20; -fx-background-radius: 5;"/>
+                        </HBox>
+
+                        <VBox spacing="5">
+                            <Label text="Items Selected for Return:"/>
+                            <TableView fx:id="selectedItemsTable" prefHeight="200" maxWidth="Infinity" style="-fx-background-color: white;">
+                                <placeholder>
+                                    <Label text="No items selected yet"/>
+                                </placeholder>
+                                <columns>
+                                    <TableColumn text="Item" fx:id="colSelectedItem" prefWidth="150"/>
+                                    <TableColumn text="Return Qty" fx:id="colReturnQty" prefWidth="150"/>
+                                    <TableColumn text="Return Amount" fx:id="colReturnAmount" prefWidth="0"
+                                                 visible="false"/>
+                                    <TableColumn text="Remove" fx:id="colRemove" prefWidth="150"/>
+                                </columns>
+                            </TableView>
+                        </VBox>
+
+                        <VBox spacing="5" visible="false" managed="false">
+                            <Label text="Total Return Amount:"/>
+                            <TextField fx:id="totalReturnAmountField" editable="false" maxWidth="Infinity"
+                                       style="-fx-background-color: #e9ecef;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Return Date:"/>
+                            <DatePicker fx:id="returnDatePicker" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Return Reason:"/>
+                            <TextArea fx:id="returnReasonArea" prefRowCount="3" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Refund Mode:"/>
+                            <ComboBox fx:id="refundModeBox" maxWidth="Infinity">
+                                <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Cash"/>
+                                        <String fx:value="Bank"/>
+                                        <String fx:value="Credit Note"/>
+                                    </FXCollections>
+                                </items>
+                            </ComboBox>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Handled By:"/>
+                            <TextField fx:id="handledByField" maxWidth="Infinity"/>
+                        </VBox>
+                    </VBox>
+                    <Button fx:id="submitButton" text="Submit Return" onAction="#handleSubmitReturn"
+                            style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 20; -fx-background-radius: 5;"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+        <BorderPane style="-fx-background-color: white;">
+            <top>
+                <VBox spacing="10" alignment="CENTER_LEFT">
+                    <padding>
+                        <Insets top="20" right="20" bottom="10" left="20"/>
+                    </padding>
+                    <Label text="Returned Items Log" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #555;"/>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Search:"/>
+                        <TextField fx:id="searchTextField" promptText="Search by Estimated, Item, etc." HBox.hgrow="ALWAYS"/>
+                        <Button fx:id="searchButton" text="Search" onAction="#handleSearch"
+                                style="-fx-background-color: #6c757d; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 5 15; -fx-background-radius: 5;"/>
+                    </HBox>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+
+                        <VBox spacing="5">
+                            <Label text="Start Date:"/>
+                            <DatePicker fx:id="startDatePicker" promptText="Select Date" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <Label text="to" alignment="BOTTOM_LEFT"/>
+
+                        <VBox spacing="5">
+                            <Label text="End Date:"/>
+                            <DatePicker fx:id="endDatePicker" promptText="Select Date" maxWidth="Infinity"/>
+                        </VBox>
+
+                    </HBox>
+                </VBox>
+            </top>
+            <center>
+                <TableView fx:id="returnLogTableView" style="-fx-background-color: #ffffff;">
+                    <columns>
+                        <TableColumn text="Estimated NO" fx:id="colInvoice" prefWidth="150"/>
+                        <TableColumn text="Item" fx:id="colItem" prefWidth="100"/>
+                        <TableColumn text="Return Date" fx:id="colReturnDate" prefWidth="100"/>
+                        <TableColumn text="Amount" fx:id="colAmount" prefWidth="80"/>
+                        <TableColumn text="Quantity" fx:id="colQuantity" prefWidth="70"/>
+                        <TableColumn text="Reason" fx:id="colReason" prefWidth="150"/>
+                        <TableColumn text="Handled By" fx:id="colHandledBy" prefWidth="100"/>
+                    </columns>
+                </TableView>
+            </center>
+        </BorderPane>
+    </items>
+</SplitPane>

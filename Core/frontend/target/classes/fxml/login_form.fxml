@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           stylesheets="@dashboard.css"
+           fx:id="rootPane"
+           fx:controller="org.nishgrid.clienterp.controller.LoginFormController"
+           prefHeight="500.0" prefWidth="800.0">
+
+    <!-- Foreground UI on top -->
+    <AnchorPane>
+
+        <!-- Date and Time -->
+        <VBox styleClass="date-time-container" layoutX="20.0" layoutY="10.0">
+            <Label fx:id="dateLabel" text="Date: " styleClass="date-time-label"/>
+            <Label fx:id="timeLabel" text="Time: " styleClass="date-time-label"/>
+        </VBox>
+
+        <!-- Login Form VBox -->
+        <VBox styleClass="login-form-container" alignment="TOP_LEFT" prefWidth="400.0"
+              AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="75.0">
+
+            <!-- Top Header with Sign In and Welcome -->
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="form-header">
+                <!-- Sign In Button - Now styled like other main action buttons -->
+                <Button mnemonicParsing="false" onAction="#handleSignInClick" styleClass="main-action-button">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@/signin.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <text>Sign In</text>
+                </Button>
+                <Region HBox.hgrow="ALWAYS"/>
+                <ImageView fitHeight="20" fitWidth="20">
+                    <image>
+                        <Image url="@/welcome.png"/>
+                    </image>
+                </ImageView>
+                <Label text="Welcome: Jewellery Shop" styleClass="header-welcome-label"/>
+            </HBox>
+
+            <!-- Welcome Back Label -->
+            <Label text="Welcome Back" styleClass="welcome-back-label"/>
+
+            <!-- Sub Text -->
+            <Label text="Please login to your account" styleClass="sub-text-label"/>
+
+            <!-- User Name Input -->
+            <VBox spacing="5">
+                <Label text="User Name" styleClass="input-label"/>
+                <HBox spacing="10" alignment="CENTER_LEFT" styleClass="input-field-with-icon">
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@/user.png"/>
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="emailField" promptText="Enter your email" HBox.hgrow="ALWAYS"/>
+                </HBox>
+            </VBox>
+
+            <!-- Password Input -->
+            <VBox spacing="5">
+                <Label text="Password" styleClass="input-label"/>
+                <HBox spacing="10" alignment="CENTER_LEFT" styleClass="input-field-with-icon">
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@/password.png"/>
+                        </image>
+                    </ImageView>
+                    <PasswordField fx:id="passwordField" promptText="Enter your password" HBox.hgrow="ALWAYS"/>
+                </HBox>
+            </VBox>
+
+            <!-- Remember Me and Forgot Password -->
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="remember-forgot-container">
+                <CheckBox mnemonicParsing="false" text="Remember me" styleClass="remember-me-checkbox"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <!-- Forgot Password Button - Now styled like other main action buttons -->
+                <Button mnemonicParsing="false" onAction="#handleForgotPassword" styleClass="main-action-button">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16">
+                            <image>
+                                <Image url="@/forget.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <text>Forgot Password</text>
+                </Button>
+            </HBox>
+
+            <!-- Login Button -->
+            <Button fx:id="loginButton" onAction="#handleLogin" styleClass="main-action-button">
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <image>
+                            <Image url="@/login.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Login</text>
+            </Button>
+
+            <!-- Close Application Button -->
+            <Button mnemonicParsing="false" onAction="#handleCloseApp" styleClass="main-action-button">
+                <graphic>
+                    <ImageView fitHeight="16" fitWidth="16">
+                        <image>
+                            <Image url="@/close.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Close Application</text>
+            </Button>
+
+            <!-- Message Label -->
+            <Label fx:id="messageLabel" wrapText="true" alignment="CENTER" prefWidth="300" styleClass="message-label"/>
+        </VBox>
+
+        <!-- Footer -->
+        <Label text="Application Developed By Nishgrid Technology Pvt. Ltd."
+               AnchorPane.leftAnchor="20.0" AnchorPane.bottomAnchor="10.0"
+               styleClass="footer-label" prefWidth="400" alignment="CENTER_LEFT"/>
+    </AnchorPane>
+
+</StackPane>

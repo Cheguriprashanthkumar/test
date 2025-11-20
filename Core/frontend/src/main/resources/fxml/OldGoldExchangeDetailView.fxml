@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<?import java.util.ArrayList?>
+<?import javafx.collections.FXCollections?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.nishgrid.clienterp.controller.OldGoldExchangeDetailController"
+      spacing="15" style="-fx-padding: 20;"
+      stylesheets="@css/validation.css">
+    <Label text="Purchase Bill Details" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+    <Separator/>
+
+    <GridPane hgap="10" vgap="8">
+        <Label text="Bill No:" style="-fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="billNoLabel" text="-" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Purchase Date:" style="-fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+        <Label fx:id="purchaseDateLabel" text="-" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+        <Label text="Seller Name:" style="-fx-font-weight: bold;" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="sellerNameLabel" text="-" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Label text="Mobile:" style="-fx-font-weight: bold;" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+        <Label fx:id="sellerMobileLabel" text="-" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+    </GridPane>
+
+    <Label text="Items Purchased" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <TableView fx:id="itemsTable" prefHeight="150">
+        <columns>
+            <TableColumn fx:id="itemNameCol" text="Item Name" prefWidth="180"/>
+            <TableColumn fx:id="metalTypeCol" text="Metal" prefWidth="80"/>
+            <TableColumn fx:id="netWeightCol" text="Net Wt (g)" prefWidth="100"/>
+            <TableColumn fx:id="wastageCol" text="Wastage %" prefWidth="80"/>
+            <TableColumn fx:id="totalValueCol" text="Total Value (₹)" prefWidth="120"/>
+        </columns>
+        <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+    </TableView>
+
+    <Separator/>
+
+    <HBox alignment="CENTER_RIGHT" spacing="20">
+        <GridPane hgap="10" vgap="8" alignment="TOP_RIGHT">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" prefWidth="180"/>
+                <ColumnConstraints halignment="LEFT" prefWidth="120"/>
+            </columnConstraints>
+
+            <Label text="Total Purchase Value:" style="-fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label fx:id="totalPurchaseLabel" text="-" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Processing Fee:" style="-fx-font-weight: bold; -fx-text-fill: red;" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label fx:id="processingFeeLabel" text="-" style="-fx-text-fill: red;" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="NET PAYABLE AMOUNT:" style="-fx-font-weight: bold; -fx-text-fill: green; -fx-font-size: 14px;" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label fx:id="netPayableLabel" text="-" style="-fx-font-size: 14px; -fx-text-fill: green; -fx-font-weight: bold;" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+
+        <Separator orientation="VERTICAL" prefHeight="100"/>
+
+        <VBox spacing="10" prefWidth="300">
+            <Label fx:id="statusLabel" text="Status: PENDING_PAYOUT" style="-fx-font-weight: bold; -fx-font-size: 16px; -fx-text-fill: orange;"/>
+
+            <GridPane hgap="10" vgap="5">
+                <Label text="Amount to Pay:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="paymentAmountField" promptText="Enter amount" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Mode:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="paymentModeBox" prefWidth="150" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Cash"/>
+                            <String fx:value="UPI"/>
+                            <String fx:value="Bank Transfer"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </GridPane>
+
+            <Button fx:id="settleButton" text="Settle Payment" onAction="#handleSettlePayment"
+                    style="-fx-background-color: #008CBA; -fx-text-fill: white; -fx-font-weight: bold;"
+                    maxWidth="Infinity" disable="true"/>
+        </VBox>
+    </HBox>
+
+    <HBox alignment="CENTER_RIGHT">
+        <Button text="Close" onAction="#handleClose"/>
+    </HBox>
+</VBox>

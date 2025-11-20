@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.nishgrid.clienterp.controller.GoldRatesController">
+    <top>
+        <Label text="Today's Gold &amp; Silver Rates" style="-fx-font-size: 18px; -fx-font-weight: bold;" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <TableView fx:id="goldRatesTable" prefHeight="400">
+            <columns>
+                <TableColumn fx:id="dateCol" text="Date/Time" prefWidth="150"/>
+                <TableColumn fx:id="rate24kCol" text="24K"/>
+                <TableColumn fx:id="rate22kCol" text="22K"/>
+                <TableColumn fx:id="rate18kCol" text="18K"/>
+                <TableColumn fx:id="rate14kCol" text="14K"/>
+                <TableColumn fx:id="rate12kCol" text="12K"/>
+                <TableColumn fx:id="rate10kCol" text="10K"/>
+                <TableColumn fx:id="rate09kCol" text="09K"/>
+                <TableColumn fx:id="fineSilverCol" text="Fine Silver"/>
+                <TableColumn fx:id="sterlingSilverCol" text="Sterling Silver"/>
+                <TableColumn fx:id="coinSilverCol" text="Coin Silver"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding><Insets top="10"/></padding>
+            <Button fx:id="refreshButton" text="Refresh" />
+        </HBox>
+    </bottom>
+
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+</BorderPane>

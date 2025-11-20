@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.nishgrid.clienterp.controller.EmployeeExitFormController"
+            prefWidth="600" prefHeight="500">
+
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="20"
+              AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
+              AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+
+            <Label text="Record Employee Exit"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <GridPane hgap="12" vgap="10" alignment="CENTER">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT" minWidth="160"/>
+                    <ColumnConstraints minWidth="220" maxWidth="250"/>
+                </columnConstraints>
+
+                <rowConstraints>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                </rowConstraints>
+
+                <Label text="Employee Code:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="employeeCodeField"
+                           promptText="Enter Employee Code"
+                           GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Exit Date:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <DatePicker fx:id="exitDatePicker"
+                            promptText="yyyy-MM-dd"
+                            GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Exit Reason:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextArea fx:id="exitReasonArea"
+                          promptText="Required. 5-200 characters."
+                          prefRowCount="2"
+                          GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Final Settlement:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="finalSettlementField"
+
+                           GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                <Label text="Feedback Notes:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <TextArea fx:id="feedbackNotesArea"
+                          promptText="Optional. Max 200."
+                          prefRowCount="2"
+                          GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                <Label text="Clearance Status:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="clearanceStatusCombo"
+                          promptText="Select status"
+                          GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                <Button text="Submit"
+                        onAction="#handleSubmit"
+                        maxWidth="120"
+                        GridPane.rowIndex="6"
+                        GridPane.columnIndex="1"
+                        GridPane.halignment="RIGHT"/>
+            </GridPane>
+
+            <Label fx:id="statusLabel"
+                   textFill="red"
+                   style="-fx-font-size: 12px;"
+                   wrapText="true"/>
+        </VBox>
+    </children>
+</AnchorPane>

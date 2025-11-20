@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="@admin-dashboard.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.nishgrid.clienterp.controller.Admin1DashboardController">
+
+
+    <top>
+        <VBox>
+            <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="10">
+                <padding><Insets bottom="10" left="10" right="15" top="10" /></padding>
+                <children>
+                    <!-- Favicon -->
+                    <ImageView fx:id="faviconImageView" fitWidth="30" fitHeight="30" />
+
+                    <!-- Client & Company Info -->
+                    <VBox>
+                        <Label fx:id="clientCompanyLabel" styleClass="header-label" text="Client Company Name" />
+<!--                        <Label fx:id="clientAddressLabel" styleClass="header-sub-label" text="Client Company Address" />-->
+                    </VBox>
+
+                    <!-- Spacer -->
+                    <Region HBox.hgrow="ALWAYS" />
+
+                    <!-- Software Expiry Days Left -->
+                    <Label styleClass="header-label" text="Software Expiry:" />
+                    <Label fx:id="expiryDaysLabel" styleClass="header-label" text="30 days left" />
+
+                    <!-- Welcome User -->
+                    <Label styleClass="header-label" text="Welcome:" />
+                    <Label fx:id="userNameLabel" styleClass="header-label" text="Username" />
+
+                    <!-- Logout Button -->
+                    <Button fx:id="logoutButton" styleClass="logout-btn" text="Logout" onAction="#handleLogout" />
+                </children>
+            </HBox>
+
+            <!-- Footer with Date/Time and Developer Credit -->
+            <HBox alignment="BOTTOM_RIGHT" spacing="10">
+                <padding>
+                    <Insets top="0" right="10" bottom="10" left="10"/>
+                </padding>
+                <Label fx:id="developedByLabel" text="Developed by NishGrid Pvt Ltd" styleClass="footer-label" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Date/Time:" />
+                <Label fx:id="dateTimeLabel" />
+            </HBox>
+        </VBox>
+    </top>
+
+
+    <!-- ==================== SIDEBAR ==================== -->
+    <left>
+        <VBox prefWidth="240" minWidth="240" maxWidth="240" styleClass="sidebar">
+            <padding><Insets bottom="10" left="5" right="5" top="10" /></padding>
+
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" style="-fx-background-color:transparent;">
+                <content>
+                    <VBox spacing="5">
+                        <!-- Dashboard Button -->
+                        <Button onAction="#handleHome" styleClass="sidebar-btn" text="Home" />
+                        <Button onAction="#handleDashboard" styleClass="sidebar-btn" text="Dashboard" />
+
+                        <Accordion fx:id="sidebarAccordion">
+                            <panes>
+
+                                <!-- Sales -->
+                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Sales">
+                                    <content>
+                                        <VBox spacing="4">
+                                            <Button text="New Sale" onAction="#handleNewSale" styleClass="sidebar-subbtn"/>
+<!--                                            <Button text="All Orders" onAction="#handleAllOrders" styleClass="sidebar-subbtn"/>-->
+                                            <Button text="Sales Report" onAction="#handleSalesReport" styleClass="sidebar-subbtn"/>
+                                            <Button text="Estimated Report" onAction="#handleInvoices" styleClass="sidebar-subbtn"/>
+<!--                                            <Button text="Sales Commissions" onAction="#handleCommisions" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Sales Audit Logs" onAction="#handleAuditLogs" styleClass="sidebar-subbtn"/>-->
+                                            <Button text="Return Sale" onAction="#handleReturnSale" styleClass="sidebar-subbtn"/>
+<!--                                            <Button text="Exchange Item" onAction="#handleExchangeItem" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Discount Config" onAction="#handleDiscountConfig" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Gold Rates" onAction="#handleViewGoldRates" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="SMS Logs" onAction="#handleSmsLogs" styleClass="sidebar-subbtn"/>-->
+<!--&lt;!&ndash;                                            <Button text="WhatsApp Logs" onAction="#handleWhatsappLogs" styleClass="sidebar-subbtn"/>&ndash;&gt;-->
+<!--                                            <Button text="Email Logs" onAction="#handleEmailLogs" styleClass="sidebar-subbtn"/>-->
+<!--&lt;!&ndash;                                            <Button text="Loyalty Points" onAction="#handleLoyaltyPoints" styleClass="sidebar-subbtn"/>&ndash;&gt;-->
+<!--                                            <Button text="Gift Vouchers" onAction="#handleGiftVouchers" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Customer KYC" onAction="#handleCustomerKyc" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="GSTR-1" onAction="#handleGstr1" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="GSTR-3B" onAction="#handleGstr3b" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="HSN Summary" onAction="#handleHsnSummary" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="GstExports" onAction="#handleExports" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Employee Commission" onAction="#handleEmployeeCommission" styleClass="sidebar-subbtn"/>-->
+                                        </VBox>
+                                    </content>
+                                </TitledPane>
+
+                                <!-- Employee -->
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Employee">-->
+<!--                                    <content>-->
+<!--                                        <VBox spacing="4">-->
+<!--                                            <Button onAction="#handleAddEmployee" styleClass="sidebar-subbtn" text="Add Employee Data" />-->
+<!--                                            <Button onAction="#handleIDCard" styleClass="sidebar-subbtn" text="ID Card" />-->
+<!--                                            <Button onAction="#handleAttendance" styleClass="sidebar-subbtn" text="Attendance Tracking" />-->
+<!--                                            <Button onAction="#handleViewEdit" styleClass="sidebar-subbtn" text="View/Edit Employee" />-->
+<!--                                            <Button onAction="#handleSalary" styleClass="sidebar-subbtn" text="Generate Salary/Payslips" />-->
+<!--                                            <Button onAction="#handleLeaves" styleClass="sidebar-subbtn" text="Manage Leaves/Holidays" />-->
+<!--                                            <Button onAction="#handleExit" styleClass="sidebar-subbtn" text="Employee Exit" />-->
+<!--                                        </VBox>-->
+<!--                                    </content>-->
+<!--                                </TitledPane>-->
+
+                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Purchase">
+                                    <content>
+                                        <VBox spacing="4">
+<!--                                            <Button text="Vendor &amp; Product" onAction="#handleVendorProduct" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Purchase Orders" onAction="#handlePurchaseOrders" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Goods Receipt Note" onAction="#handleGrn" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Vendor Invoices" onAction="#handleVendorInvoices" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Payments to Vendor" onAction="#handlePayments" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Purchase Returns" onAction="#handlePurchaseReturns" styleClass="sidebar-subbtn"/>-->
+
+                                            <Button text="Old Gold Exchange" onAction="#handleOldGoldExchange" styleClass="sidebar-subbtn"/>
+                                            <Button text="Old Gold Audit" onAction="#handleOldGoldAudit" styleClass="sidebar-subbtn"/>
+<!--                                            <Button text="auditDetail" onAction="#handleOldGoldD" styleClass="sidebar-subbtn"/>-->
+
+<!--                                            <Button text="Attach Documents" onAction="#handleAttachDocuments" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Barcode Tracking" onAction="#handleBarcodeTracking" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Purchase Audit Logs" onAction="#handlePurchaseAuditLogs" styleClass="sidebar-subbtn"/>-->
+                                        </VBox>
+                                    </content>
+                                </TitledPane>
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Other Expense">-->
+<!--                                    <content>-->
+<!--                                        <VBox spacing="4">-->
+<!--                                            <Button text="Manage Expenses" onAction="#handleOtherExpenses" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Expense Returns" onAction="#handleExpenseReturns" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Expense Exchanges" onAction="#handleExpenseExchanges" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Expense Reports" onAction="#handleExpenseReports" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="View Cancelled Logs" onAction="#handleViewCancelledLogs" styleClass="sidebar-subbtn"/>-->
+<!--                                        </VBox>-->
+<!--                                    </content>-->
+<!--                                </TitledPane>-->
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Notes">-->
+<!--                                    <content>-->
+<!--                                        <VBox spacing="4">-->
+<!--                                            <Button text="Debit Notes" onAction="#handleDebitNotes" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Attach Debit Note Files" onAction="#handleDebitNoteFiles" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Debit Note Audit Logs" onAction="#handleDebitNoteAuditLogs" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Credit Notes" onAction="#handleCredittNotes" styleClass="sidebar-subbtn"/>-->
+<!--                                            <Button text="Credit Note Audit Logs" onAction="#handleCreditNoteAuditLogs" styleClass="sidebar-subbtn"/>-->
+<!--                                        </VBox>-->
+<!--                                    </content>-->
+<!--                                </TitledPane>-->
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Innovative Plans">-->
+<!--                                    <content><VBox spacing="4"><Button styleClass="sidebar-subbtn" text="New Strategies" /><Button styleClass="sidebar-subbtn" text="Future Projects" /></VBox></content>-->
+<!--                                </TitledPane>-->
+
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Payment Dues">-->
+<!--                                    <content><VBox spacing="4"><Button styleClass="sidebar-subbtn" text="Pending Invoices" /><Button styleClass="sidebar-subbtn" text="Overdue Payments" /></VBox></content>-->
+<!--                                </TitledPane>-->
+
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Collect Dues">-->
+<!--                                    <content><VBox spacing="4"><Button styleClass="sidebar-subbtn" text="Customer Follow-up" /><Button styleClass="sidebar-subbtn" text="Automated Reminders" /></VBox></content>-->
+<!--                                </TitledPane>-->
+
+                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Back Up">
+                                    <content><VBox spacing="4"><Button styleClass="sidebar-subbtn" text="Backup-view" onAction="#handleShowBackup"/></VBox></content>
+                                </TitledPane>
+
+<!--                                <TitledPane expanded="false" text="Create Barcode" styleClass="sidebar-titled">-->
+<!--                                    <content>-->
+<!--                                        <VBox spacing="4">-->
+<!--                                            <Button text="Generate Barcode"-->
+<!--                                                    styleClass="sidebar-subbtn"-->
+<!--                                                    onAction="#handleShowGenerateView" />-->
+<!--&lt;!&ndash;                                            <Button text="Scan Barcode"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    styleClass="sidebar-subbtn"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    onAction="#handleShowScanView" />&ndash;&gt;-->
+<!--                                        </VBox>-->
+<!--                                    </content>-->
+<!--                                </TitledPane>-->
+
+<!--                                <TitledPane expanded="false" styleClass="sidebar-titled" text="Dues Reminder">-->
+<!--                                    <content><VBox spacing="4"><Button styleClass="sidebar-subbtn" text="Email Reminders" /><Button styleClass="sidebar-subbtn" text="SMS Notifications" /></VBox></content>-->
+<!--                                </TitledPane>-->
+
+                                <TitledPane expanded="false" styleClass="sidebar-titled" text="About Us">
+                                    <content>
+                                        <VBox spacing="4">
+                                            <Button  onAction="#handlecompanyinfo"  styleClass="sidebar-subbtn" text="Company Info" />
+                                            <Button styleClass="sidebar-subbtn" text="Contact Details" />
+                                            <Button onAction="#handleBankDetails" styleClass="sidebar-subbtn" text="Bank Details" />
+                                            <Button onAction="#handleaddclient" styleClass="sidebar-subbtn" text="Invoices" />
+                                            <Button text="Check for Updates" onAction="#handleCheckUpdate" />
+
+
+                                        </VBox>
+                                    </content>
+                                </TitledPane>
+
+                            </panes>
+                        </Accordion>
+                    </VBox>
+                </content>
+            </ScrollPane>
+        </VBox>
+    </left>
+
+
+    <center>
+        <StackPane fx:id="mainContent" />
+    </center>
+
+</BorderPane>

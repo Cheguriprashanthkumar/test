@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.nishgrid.clienterp.controller.EditAttendanceController"
+          hgap="10" vgap="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Employee Code:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtEmployeeCode" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Attendance Date:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <DatePicker fx:id="dpAttendanceDate" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Check-in Time (HH:mm:ss):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtCheckInTime" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Check-out Time (HH:mm:ss):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtCheckOutTime" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Working Hours:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtWorkingHours" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Present Status:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <ComboBox fx:id="cbPresentStatus" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Remarks:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtRemarks" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+    <Button text="Save" fx:id="btnSave" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+</GridPane>

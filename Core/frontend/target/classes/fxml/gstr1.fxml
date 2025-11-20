@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.nishgrid.clienterp.controller.Gstr1Controller">
+    <top>
+        <Label text="GSTR-1 Line Items"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+
+            <TableView fx:id="gstr1Table" prefHeight="500">
+                <columns>
+                    <TableColumn fx:id="invoiceIdCol" text="Invoice ID" prefWidth="100"/>
+                    <TableColumn fx:id="customerGstinCol" text="Customer GSTIN" prefWidth="150"/>
+                    <TableColumn fx:id="invoiceDateCol" text="Invoice Date" prefWidth="100"/>
+                    <TableColumn fx:id="hsnCol" text="HSN Code" prefWidth="100"/>
+                    <TableColumn fx:id="taxableValCol" text="Taxable Value" prefWidth="120"/>
+                    <TableColumn fx:id="gstRateCol" text="GST Rate (%)" prefWidth="100"/>
+                    <TableColumn fx:id="cgstCol" text="CGST" prefWidth="100"/>
+                    <TableColumn fx:id="sgstCol" text="SGST" prefWidth="100"/>
+                    <TableColumn fx:id="igstCol" text="IGST" prefWidth="100"/>
+                    <TableColumn fx:id="exportMonthCol" text="Export Month" prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <Button fx:id="refreshButton" text="Refresh"/>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.nishgrid.clienterp.controller.SalesReportController"
+            prefWidth="1000" prefHeight="600">
+
+    <top>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="From:"/>
+            <DatePicker fx:id="fromDatePicker" />
+            <Label text="To:"/>
+            <DatePicker fx:id="toDatePicker" />
+            <Button text="Generate Report" onAction="#handleGenerateReport"/>
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="reportTable" prefHeight="500">
+            <columns>
+                <TableColumn fx:id="dateCol" text="Date" prefWidth="150"/>
+                <TableColumn fx:id="totalInvoicesCol" text="Total Invoices" prefWidth="150"/>
+                <TableColumn fx:id="totalAmountCol" text="Total Amount" prefWidth="150"/>
+                <TableColumn fx:id="netAmountCol" text="Net Amount" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

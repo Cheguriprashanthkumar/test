@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nishgrid.clienterp.controller.CreditNoteAuditLogController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <children>
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Credit Note Audit Logs" />
+        <TableView fx:id="auditLogTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colLogId" prefWidth="80.0" text="Log ID" />
+                <TableColumn fx:id="colCreditNoteId" prefWidth="120.0" text="Credit Note ID" />
+                <TableColumn fx:id="colChangedAt" prefWidth="180.0" text="Date &amp; Time" />
+                <TableColumn fx:id="colChangedBy" prefWidth="150.0" text="User" />
+                <TableColumn fx:id="colDescription" prefWidth="500.0" text="Action / Description" />
+            </columns>
+            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY" /></columnResizePolicy>
+        </TableView>
+    </children>
+</VBox>

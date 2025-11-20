@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.nishgrid.clienterp.controller.LicenseKeyController"
+      alignment="CENTER" spacing="20" styleClass="root">
+
+    <Label text="Enter your License Key:" styleClass="label"/>
+
+    <TextField fx:id="licenseKeyField" prefWidth="300" promptText="License Key" styleClass="text-field"/>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="OK" onAction="#handleOk" prefWidth="100" styleClass="button"/>
+        <Button text="Cancel" onAction="#handleCancel" prefWidth="100" styleClass="button"/>
+    </HBox>
+
+</VBox>

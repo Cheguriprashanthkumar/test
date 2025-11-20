@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Core:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1048222-1fe5-4b96-9a8d-54898f3e8c1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/launcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/myerpdb_backup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/myerpdb_backup.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/MySQLToSQLiteMigrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/MySQLToSQLiteMigrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/config/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/config/DataSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/AttendanceLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/BarcodeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/BarcodeGenerationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/CancelledExpenseLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ClientDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ClientDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/CommissionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/CreditNoteAuditLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/CreditNoteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/CreditNoteFileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/CustomerKycController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/DebitNoteAuditLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/DebitNoteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/DebitNoteFileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/DiscountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/EmailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/EmailLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/EmployeeExitController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ExchangeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/GiftVoucherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/GoldRateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/GrnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/GstController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/HandleChooseLogo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/HsnSummaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/LeaveRequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/LicenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/LicenseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/OtherExpenseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/OtherExpenseExchangeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/OtherExpenseReturnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/PayslipController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ProductCatalogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/PurchaseDocumentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/PurchaseInvoiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/PurchaseOrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/PurchaseReturnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReturnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/ReturnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SalaryStructureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SalesInvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SalesInvoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SmsLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/VendorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/VendorPaymentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/AttendanceLogRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/BarcodeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/BarcodeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CancelExpenseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CancelledExpenseLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteAuditLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteFileResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CreditNotePaymentRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CreditNotePaymentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CustomerKycDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CustomerKycRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/CustomerKycResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteAuditLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteFileResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteTaxResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DevicePunchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/DiscountDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/EmailLogDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/EmployeeExitRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/EmployeeIdCardDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/EmployeeRegistrationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/EmployeeSelectionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/ExchangeRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/GiftVoucherCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/GiftVoucherResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/GoldRateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/GrnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/GrnResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/Gstr1HsnSummaryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/Gstr1ItemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/Gstr3bAggregationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/Gstr3bSummaryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/HsnAggregationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/HsnSummaryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/LeaveRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseExchangeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseExchangeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseReturnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseReturnResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PaymentRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PayslipRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PurchaseDocumentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PurchaseInvoiceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PurchaseInvoiceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PurchaseOrderRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PurchaseReturnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/PurchaseReturnResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SaleUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/SmsLogDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/VendorPaymentRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/VendorPaymentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/dto/VoucherStatusUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/AuditLogEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/AuditLogEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/EmailNotificationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/EmailNotificationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/SmsNotificationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/listener/SmsNotificationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/AttendanceLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/BackupLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/BankDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Barcode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/BarcodeGeneration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CancelledExpenseLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/ClientDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CreditNote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CreditNoteAuditLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CreditNoteFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CreditNoteItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CreditNotePayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CreditNoteTax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/CustomerKyc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/DebitNote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/DebitNoteAuditLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/DebitNoteFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/DebitNoteItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/DebitNoteTax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Discount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/DocumentSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/EmailLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/EmployeeExit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/GiftVoucher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/GoldRate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/GoodsReceiptNote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/GstExport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Gstr1Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Gstr3bSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/HsnSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/LeaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/LicenseDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/LicenseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/LicenseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/OtherExpense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/OtherExpenseExchange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/OtherExpenseReturn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PaymentReceived.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PaymentTransaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Payslip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/ProductCatalog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseAuditLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseInvoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseOrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseReturn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/PurchaseStatusLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalaryStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesAuditLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesCommission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesExchange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesInvoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesReturn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SalesSummaryReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/SmsNotification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/Vendor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/VendorPayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/model/VoucherStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/AttendanceLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/BackupLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/BankDetailsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/BarcodeGenerationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/BarcodeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/CancelledExpenseLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/ClientDetailsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/CreditNoteAuditLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/CreditNoteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/CustomerKycRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/DebitNoteAuditLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/DebitNoteFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/DebitNoteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/DebitNoteTaxRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/DiscountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/EmailLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/EmployeeExitRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/GiftVoucherRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/GoldRateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/GrnRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/GstExportRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/Gstr1ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/Gstr3bSummaryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/HsnSummaryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/LeaveRequestRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/LicenseDetailsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/LicenseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/OtherExpenseExchangeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/OtherExpenseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/OtherExpenseReturnRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PaymentReceivedRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PayslipRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/ProductCatalogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseAuditLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseDocumentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseInvoiceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseOrderItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseOrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseReturnRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/PurchaseStatusLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalaryStructureRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesAuditLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesCommissionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesExchangeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesInvoiceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesReturnRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SalesSummaryReportRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/SmsNotificationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/VendorPaymentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/repository/VendorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/AttendanceLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/AuditComparisonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/AuditLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BackupLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BackupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BankDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BankDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BarcodeGenerationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BarcodeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/BarcodeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ClientDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/CommissionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/CreditNoteAuditLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/CreditNoteFileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/CreditNoteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/CreditNoteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/CustomerKycService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/DebitNoteAuditLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/DebitNoteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/DebitNoteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/DiscountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/DocumentSequenceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/EmployeeExitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ExchangeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/FileStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GeoNamesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GiftVoucherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GoldRateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GrnService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GrnServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GstExportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/GstReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/HsnSummaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/InvoicePrintService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/LeaveRequestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/LicenseApiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/LoginResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/OtherExpenseExchangeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/OtherExpenseExchangeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/OtherExpenseReturnService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/OtherExpenseReturnServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/OtherExpenseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/OtherExpenseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PasswordUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PaymentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PayslipService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PurchaseInvoiceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PurchaseInvoiceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PurchaseOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PurchaseOrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PurchaseReturnService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/PurchaseReturnServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ReturnService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SalaryStructureService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SaleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SalesAuditLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SalesReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/SmsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/VendorPaymentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/VendorPaymentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-mysql-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application-mysql-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-mysql-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application-mysql-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exports/gstr1_export_202509.csv" beforeDir="false" afterPath="$PROJECT_DIR$/exports/gstr1_export_202509.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/AddPaymentDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/AddPaymentDialogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/Admin1DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/Admin1DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/AllOrdersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/AttendanceLogFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/AttendanceTabController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/AttendanceViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BackupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BackupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BankDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/BarcodeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/CancelledExpenseLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ClientDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ClientDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/CreditNoteAuditLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/CreditNoteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/CustomerKycController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/DashboardContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/DashboardContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/DebitNoteAuditLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/DebitNoteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/DebitNoteFileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/DiscountConfigController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditAttendanceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditButtonCellFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditEmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditExitController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditLeaveController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditPayslipController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EditSalaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmailLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmployeeDetailsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmployeeExitFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmployeeExitViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmployeeListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmployeeRegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/EmployeeTabController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ExchangeItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ExitTableController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ExpenseReportController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/GenerateBarcodeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/GiftVoucherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/GoldRatesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/GrnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/GstExportsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/Gstr1Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/Gstr3bController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/HsnSummaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/IdCardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/InvoicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/InvoicesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LeaveRequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LeaveRequestFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LicenseKeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LicenseKeyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/OtherExpenseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/OtherExpenseExchangeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/OtherExpenseReturnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PayslipControllerFx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PayslipTabController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PrintLabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PrintLabelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PurchaseDocumentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PurchaseInvoiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PurchaseOrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/PurchaseReturnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ReturnSaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ReturnSaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalaryStructureFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalaryTabController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesAuditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesAuditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesCommissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesCommissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesreportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesreportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SmsWhatsappLogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/VendorPaymentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/VendorProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BankDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BarcodeGenerationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BarcodeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BarcodeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/BarcodeResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CancelExpenseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CancelledExpenseLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteAuditLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteFileResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CreditNotePaymentRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CreditNoteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CustomerKycDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CustomerKycRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/CustomerKycResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteAuditLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteFileResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/DebitNoteTaxResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/DiscountDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/EmailLogDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/EmployeeSelectionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/ExchangeRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/GiftVoucherCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/GiftVoucherResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/GrnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/GstExportDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/Gstr1ItemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/Gstr3bAggregationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/Gstr3bSummaryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/HsnAggregationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/HsnSummaryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/InvoiceRowDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseExchangeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseExchangeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseReturnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/OtherExpenseReturnResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PayslipRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PurchaseDocumentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PurchaseInvoiceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PurchaseInvoiceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PurchaseOrderRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PurchaseReturnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PurchaseReturnResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/ReturnRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalaryStructureRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SaleRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesInvoiceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesInvoiceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesItemSelectionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesListResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesListResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SalesRecordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/SmsLogDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/VendorPaymentRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/VendorPaymentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/VoucherStatusUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/EmailLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/EmailLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/InvoiceRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/InvoiceRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/LicenseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/LicenseRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/LicenseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/LicenseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesRecordFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesRecordFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesSummaryReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model/SalesSummaryReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/service/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/service/LicenseApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/service/LicenseApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/util/ConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/util/ConfigData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/util/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/util/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Admin1Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Admin1Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/BankDetailsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/BankDetailsView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/DashboardContent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/DashboardContent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ExchangeItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ExchangeItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Invoices.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/Invoices.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/NewSale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/NewSale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ReturnSale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/ReturnSale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesAuditView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesAuditView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesDetailView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/SalesDetailView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/client_details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/client_details.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/email_logs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/email_logs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/fxml/sales_reports.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/fxml/sales_reports.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/jewelery.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrcodes/5e052ade-95f6-4622-bc27-e5a41a01a7c6.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/controller/SaleController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/LicenseApiService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/org/nishgrid/clienterp/service/ReturnService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/ReturnSaleController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesAuditController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesCommissionController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/controller/SalesDetailController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3052jaPe8ooe6vkqiGtdIZolIzd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MySQLToSQLiteMigrator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NishgridClientErpBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.frontend [clean,javafx:run].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sales-1.0&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dev1/license-provider&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/dev1/test/Core(prev1)/launcher/src/main/java/org/nishgrid/clienterp/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/model" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/resources" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/resources/fxml" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.nishgrid.clienterp.model" />
+      <recent name="org.nishgrid.clienterp.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean javafx:run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.NishgridClientErpBackendApplication">
+    <configuration name="MySQLToSQLiteMigrator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.nishgrid.clienterp.MySQLToSQLiteMigrator" />
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nishgrid.clienterp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NishgridClientErpBackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.nishgrid.clienterp.NishgridClientErpBackendApplication" />
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nishgrid.clienterp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="backend" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NishgridClientErpBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.nishgrid.clienterp.NishgridClientErpBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NishgridClientErpBackendApplication" />
+        <item itemvalue="Application.MySQLToSQLiteMigrator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1048222-1fe5-4b96-9a8d-54898f3e8c1b" name="Changes" comment="" />
+      <created>1752903248368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752903248368</updated>
+      <workItem from="1757184560782" duration="12000" />
+      <workItem from="1757184628818" duration="107000" />
+      <workItem from="1757185359588" duration="12154000" />
+      <workItem from="1757315397651" duration="1644000" />
+      <workItem from="1757319578374" duration="2870000" />
+      <workItem from="1757322886969" duration="33251000" />
+      <workItem from="1757501649447" duration="337000" />
+      <workItem from="1757566054996" duration="41481000" />
+      <workItem from="1757926494439" duration="10137000" />
+      <workItem from="1757936859452" duration="570000" />
+      <workItem from="1757994216275" duration="20186000" />
+      <workItem from="1758019536885" duration="1642000" />
+      <workItem from="1758021911286" duration="3598000" />
+      <workItem from="1758082587488" duration="4935000" />
+      <workItem from="1758087561653" duration="16979000" />
+      <workItem from="1758118751867" duration="15012000" />
+      <workItem from="1758180071124" duration="9272000" />
+      <workItem from="1758189729942" duration="5948000" />
+      <workItem from="1758196046661" duration="196000" />
+      <workItem from="1758198903679" duration="13957000" />
+      <workItem from="1758273253560" duration="7134000" />
+      <workItem from="1758341173527" duration="38775000" />
+      <workItem from="1758518598320" duration="19639000" />
+      <workItem from="1758773291541" duration="5444000" />
+      <workItem from="1758778896300" duration="32220000" />
+      <workItem from="1758866538115" duration="749000" />
+      <workItem from="1758867314981" duration="2939000" />
+      <workItem from="1758882474974" duration="1417000" />
+      <workItem from="1758884461344" duration="145000" />
+      <workItem from="1758884630258" duration="392000" />
+      <workItem from="1758885079356" duration="21042000" />
+      <workItem from="1759056046513" duration="9425000" />
+      <workItem from="1759124014656" duration="6576000" />
+      <workItem from="1759130652029" duration="6287000" />
+      <workItem from="1759141442590" duration="336000" />
+      <workItem from="1759201480942" duration="4406000" />
+      <workItem from="1759245456582" duration="4252000" />
+      <workItem from="1759722628146" duration="53000" />
+      <workItem from="1759722695178" duration="300000" />
+      <workItem from="1759723004876" duration="331000" />
+      <workItem from="1759723366731" duration="7025000" />
+      <workItem from="1759731041681" duration="4705000" />
+      <workItem from="1759739780536" duration="7203000" />
+      <workItem from="1759756479728" duration="228000" />
+      <workItem from="1759801928083" duration="7109000" />
+      <workItem from="1759819847899" duration="3287000" />
+      <workItem from="1759825518030" duration="16817000" />
+      <workItem from="1759985161607" duration="13160000" />
+      <workItem from="1760003360225" duration="21611000" />
+      <workItem from="1760419712994" duration="13428000" />
+      <workItem from="1760501586990" duration="577000" />
+      <workItem from="1760502479352" duration="2994000" />
+      <workItem from="1760594230964" duration="11202000" />
+      <workItem from="1760610337632" duration="1337000" />
+      <workItem from="1760618153442" duration="842000" />
+      <workItem from="1760630859240" duration="6886000" />
+      <workItem from="1760705065966" duration="7035000" />
+      <workItem from="1761280476570" duration="21121000" />
+      <workItem from="1761541591066" duration="6061000" />
+      <workItem from="1761651331095" duration="144000" />
+      <workItem from="1761652608869" duration="386000" />
+      <workItem from="1761653180028" duration="4652000" />
+      <workItem from="1761704921092" duration="7476000" />
+      <workItem from="1761713015999" duration="2211000" />
+      <workItem from="1761797277982" duration="349000" />
+      <workItem from="1761798902557" duration="4191000" />
+      <workItem from="1761891253607" duration="1113000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.db" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/org/nishgrid/clienterp/dto/PaymentRequestDTO.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

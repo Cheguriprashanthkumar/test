@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.nishgrid.clienterp.controller.LeaveRequestFormController"
+            prefWidth="500" prefHeight="500">
+    <children>
+        <VBox spacing="15" alignment="TOP_CENTER"
+              AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10"
+              AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Apply Leave" styleClass="leave-form-title"/>
+
+            <GridPane hgap="10" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT" minWidth="150"/>
+                    <ColumnConstraints minWidth="200" maxWidth="250"/>
+                </columnConstraints>
+
+                <children>
+                    <Label text="Employee Code:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <TextField fx:id="employeeCodeField" promptText="Employee Code"
+                               styleClass="leave-form-field"
+                               GridPane.rowIndex="0" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="Leave Type:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                    <TextField fx:id="leaveTypeField" promptText="Sick, Casual etc."
+                               styleClass="leave-form-field"
+                               GridPane.rowIndex="1" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="Holiday Name:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                    <TextField fx:id="holidayNameField" promptText="Holiday Name"
+                               styleClass="leave-form-field"
+                               GridPane.rowIndex="2" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="From Date:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                    <DatePicker fx:id="fromDatePicker" styleClass="leave-form-field"
+                                GridPane.rowIndex="3" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="To Date:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                    <DatePicker fx:id="toDatePicker" styleClass="leave-form-field"
+                                GridPane.rowIndex="4" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="Total Days:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                    <TextField fx:id="totalDaysField" promptText="Number of Days"
+                               styleClass="leave-form-field"
+                               GridPane.rowIndex="5" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="Approved By:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                    <TextField fx:id="approvedByField" promptText="Manager Name"
+                               styleClass="leave-form-field"
+                               GridPane.rowIndex="6" GridPane.columnIndex="1" maxWidth="220"/>
+
+                    <Label text="Payment Type:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                    <ComboBox fx:id="leavePaymentTypeCombo" promptText="Paid / Unpaid"
+                              styleClass="leave-form-field"
+                              GridPane.rowIndex="7" GridPane.columnIndex="1" maxWidth="220"/>
+                </children>
+            </GridPane>
+
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="Submit" onAction="#handleSubmit" styleClass="leave-form-button"/>
+                <Label fx:id="statusLabel" textFill="red"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

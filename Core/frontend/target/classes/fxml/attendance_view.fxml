@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- This FXML links to the AttendanceViewController -->
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.nishgrid.clienterp.controller.AttendanceViewController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <top>
+        <VBox spacing="15">
+            <Label text="Employee Attendance Records" styleClass="header-label"/>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="searchField" promptText="Enter Employee Code to Search" HBox.hgrow="ALWAYS"/>
+                <Button text="Search" onAction="#handleSearch"/>
+                <Button text="Show All" onAction="#loadInitialData"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="attendanceTable" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="employeeCodeCol" text="Employee Code" prefWidth="120"/>
+                <TableColumn fx:id="employeeNameCol" text="Employee Name" prefWidth="150"/>
+                <TableColumn fx:id="dateCol" text="Date" prefWidth="100"/>
+                <TableColumn fx:id="checkInCol" text="Check-in" prefWidth="100"/>
+                <TableColumn fx:id="checkOutCol" text="Check-out" prefWidth="100"/>
+                <TableColumn fx:id="statusCol" text="Status" prefWidth="100"/>
+                <TableColumn fx:id="hoursCol" text="Working Hours" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
